@@ -22,7 +22,7 @@ class Mysql:
               sql = "SELECT * FROM home_meizi" #sql语句
               cursor.execute(sql)
               row = cursor.fetchall() #我这边查询的是第一条的数据
-              print(row)
+              # print(row)
               result = {"msg": "ok", "data": row, "code": 200}
               return result
           connection.commit()
